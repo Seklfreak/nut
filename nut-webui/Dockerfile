@@ -14,7 +14,7 @@ ENV SSL_PRIVATE_KEY= \
     SSL_CERTIFICATE=
 
 RUN apt-get update && \
-    apt-get install -y nut-cgi fcgiwrap nginx-light openssl ssl-cert busybox && \
+    apt-get install -y nut-cgi fcgiwrap spawn-fcgi nginx-light openssl ssl-cert busybox && \
     apt-get auto-remove && \
     apt-get clean
 
